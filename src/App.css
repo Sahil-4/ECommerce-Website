@@ -1,38 +1,115 @@
-.App {
+/* Header and Nav Bar Styling */
+.header {
+  width: 100vw;
+  height: 36px;
+  background-color: #faf;
+  display: block;
+  text-align: center;
+  position: fixed;
+  top: 0;
+}
+
+.logo {
+  height: 90%;
+}
+
+.menubutton {
+  height: 90%;
+  float: right;
+}
+
+#navbar {
+  height: 0vh;
+  width: 100vw;
+  color: #fff;
+  background-color: #000;
+  overflow: hidden;
+  transition: 0.9s;
+}
+
+.navbar-child {
+  margin: 5px;
+  color: #00f;
+}
+
+/* Remove scroll bar for chrome Safari Opera */
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Remove scroll bar for IE Edge & Firefox */
+.scroll-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.w-100p {
+  width: 100%;
+}
+
+.btn {
+  outline: none;
+  border: none;
+}
+
+/* Home Page Styling */
+#Home {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 36px;
+}
+
+.highlightedproductimgbox {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+}
+
+#highlightedproductdescriptionmoretext {
+  display: none;
+}
+
+.readMoreButton {
+  background-color: transparent;
+}
+
+.trendingproductsbox {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+}
+
+.footercontainer {
+  display: block;
+  justify-content: center;
+}
+
+.footerbox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footerboxbottom {
+  display: block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Adding media queries for responsive layout */
+@media screen and (min-width: 420px) {
+  #navbar {
+    height: 29px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .menubutton {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #Home {
+    margin-top: 69px;
   }
 }

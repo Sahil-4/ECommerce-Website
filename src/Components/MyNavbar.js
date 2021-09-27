@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Logo from "./res/Logo.png";
 import menubutton from "./res/menubutton.png";
 
+// to change layout 
+
 export default function MyNavbar() {
   return (
     <>

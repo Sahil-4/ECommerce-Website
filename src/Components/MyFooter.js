@@ -6,6 +6,8 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 
+// to change layout
+
 const MyFooter = () => {
   return (
     <footer className="footercontainer w-100">

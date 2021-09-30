@@ -1,11 +1,11 @@
 import React from "react";
-import phone1Img from "./res/phone1.png";
-import Trendingproducts from "./Trendingproducts";
+// import phone1Img from "./res/phone1.png";
+// import Trendingproducts from "./Trendingproducts";
 
 const Home = () => {
   return (
     <div id="Home">
-      <div className="highlightedproductbox w-100p">
+      {/* <div className="highlightedproductbox w-100p">
         <div className="highlightedproductimgbox w-100p scroll-hide">
           <img
             src={phone1Img}
@@ -45,8 +45,8 @@ const Home = () => {
             Read More
           </button>
         </p>
-      </div>
-      <Trendingproducts></Trendingproducts>
+      </div> */}
+      {/* <Trendingproducts></Trendingproducts> */}
     </div>
   );
 };

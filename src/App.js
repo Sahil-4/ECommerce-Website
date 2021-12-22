@@ -1,41 +1,33 @@
-
+import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
-import MyNavbar from './Components/MyNavbar';
-import Home from './Components/Home';
-import Products from "./Components/Products";
-import About from "./Components/About";
-import Contactus from "./Components/Contactus";
-import MyFooter from "./Components/MyFooter";
-import './App.css';
-import Feedback from "./Components/Feedback";
+import './App.css'
+import Home from './Pages/Home';
+import Products from "./Pages/Products";
+import Contact from "./Pages/Contact";
+import About from "./Pages/About";
 
 function App() {
   return (
     <>
       <Router>
-        <MyNavbar></MyNavbar>
         <Switch>
           <Route exact path='/'>
             <Home />
           </Route>
-          <Route exact path='/Products'>
+          <Route exact path='/products'>
             <Products />
           </Route>
-          <Route exact path='/About'>
+          <Route exact path='/about'>
             <About />
           </Route>
-          <Route exact path='/Contact'>
-            <Contactus />
-          </Route>
-          <Route exact path='/Products'>
-            <Feedback />
+          <Route exact path='/contact'>
+            <Contact />
           </Route>
         </Switch>
-        <MyFooter></MyFooter>
       </Router>
     </>
   );

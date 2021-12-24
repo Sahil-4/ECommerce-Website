@@ -1,45 +1,60 @@
 /*  Styling Top Menu Bar  */
 .menu-bar {
-  width: 100%;
   height: 5%;
+  overflow: hidden;
   position: fixed;
   top: 0;
 }
 
 .top-bar-object {
   height: 99%;
+  width: 10%;
   display: inline;
   outline: 1px solid black;
 }
 
 .search-box {
-  width: 75%;
+  height: 100%;
+  width: 80%;
 }
 
 .menu-cart-button,
 .menu-open-button {
   float: right;
-  margin: 0 2px;
 }
 
-/*  Styling Top Menu Bar  */
+/*  Styled Top Menu Bar  */
 
 /*  Styling Side Menu  */
-.side-menu {
+.side-bar {
   height: 100vh;
   width: 0%;
-  background: rosybrown;
-  overflow: scroll;
-  transition: 0.5s;
+  background: #bc8f8f;
+  transition: 0.4s;
+  border-radius: 12px 0;
   position: fixed;
+  z-index: 1;
   top: 0;
   right: 0;
 }
 
-.side-menu-links {
-  margin-top: 5px;
+.menu-close-button {
+  float: right;
   display: block;
+}
+
+.nav-link-container {
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+.side-menu-links {
+  height: 22px;
+  width: 100%;
+  font-size: 18px;
+  background: rgb(97, 192, 94);
   color: #222;
 }
 
-/*  Styling Side Menu  */
+/*  Styled Side Menu  */

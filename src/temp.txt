@@ -177,4 +177,35 @@ App.css
   }
 }
  /////////////////////////////////////////////////////////////// 
- 
+
+
+ /////////////////////////////////////////////////////////////// 
+        <img
+          src={CloseMenu}
+          onClick={toggleSideBar}
+          className="menu-close-button side-menu-links"
+          alt="close-menu"
+        />
+        <Link className="side-menu-links" to="/">
+          Home
+        </Link>
+        <Link className="side-menu-links" to="/products">
+          All Products
+        </Link>
+        <Link className="side-menu-links" to="/categories">
+          Categories
+        </Link>
+        <Link className="side-menu-links" to="/feedback">
+          Feedback
+        </Link>
+        <Link className="side-menu-links" to="/help">
+          Help
+        </Link>
+        <Link className="side-menu-links" to="/about">
+          About UsHelpLog Out
+        </Link>
+        <Link className="side-menu-links" to="/login">
+          Log Out
+        </Link>
+
+ /////////////////////////////////////////////////////////////// 

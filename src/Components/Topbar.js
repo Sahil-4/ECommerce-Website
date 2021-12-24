@@ -1,64 +1,93 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CartImage from "./res/CartImage.png";
-import OpenMenu from "./res/OpenMenu.png";
-import CloseMenu from "./res/CloseMenu.png";
+import {
+  BiMenuAltLeft,
+  BiCart,
+  BiCategoryAlt,
+  BiHelpCircle,
+  BiInfoCircle,
+  BiLogOut,
+} from "react-icons/bi";
+import { IoIosClose } from "react-icons/io";
+import { AiOutlineHome, AiFillAppstore } from "react-icons/ai";
+import { MdFeedback } from "react-icons/md";
 
 const Topbar = () => {
   const toggleSideBar = () => {
-    let sideBar = document.getElementById("side-menu");
-    sideBar.style.width = sideBar.style.width !== "0%" ? "0%" : "35%";
+    let sideBar = document.getElementById("side-bar");
+    sideBar.style.width = sideBar.style.width !== "0%" ? "0%" : "30%";
   };
+
   return (
     <>
-      <header className="menu-bar">
+      {/* Top Menu Bar */}
+      <header className="menu-bar W100">
         <input
           type="text"
           name="search"
           placeholder="Search"
-          className="search-box top-bar-object"
+          className="search-box top-bar-object H100"
         />
-        <img
-          src={OpenMenu}
+        <BiMenuAltLeft
           onClick={toggleSideBar}
-          className="menu-open-button top-bar-object"
-          alt="open-menu"
+          className="menu-open-button top-bar-object icon"
         />
-        <img
-          src={CartImage}
-          className="menu-cart-button top-bar-object"
-          alt="open-cart"
-        />
+        <BiCart className="menu-cart-button top-bar-object icon" />
       </header>
-      <menu className="side-menu" id="side-menu">
-        <img
-          src={CloseMenu}
+      {/* Top Menu Bar */}
+
+      {/* Side Bar */}
+      <div className="side-bar" id="side-bar">
+        <IoIosClose
           onClick={toggleSideBar}
-          className="menu-close-button side-menu-links"
-          alt="close-menu"
+          className="menu-close-button icon"
         />
-        <Link className="side-menu-links" to="/">
-          Home
-        </Link>
-        <Link className="side-menu-links" to="/products">
-          All Products
-        </Link>
-        <Link className="side-menu-links" to="/categories">
-          Categories
-        </Link>
-        <Link className="side-menu-links" to="/feedback">
-          Feedback
-        </Link>
-        <Link className="side-menu-links" to="/help">
-          Help
-        </Link>
-        <Link className="side-menu-links" to="/about">
-          About Us
-        </Link>
-        <Link className="side-menu-links" to="/login">
-          Log Out
-        </Link>
-      </menu>
+        <ul className="nav-link-container">
+          <li className="side-menu-links">
+            <Link to="/">
+              <AiOutlineHome />
+              Home
+            </Link>
+          </li>
+          <li className="side-menu-links">
+            <Link to="/products">
+              <AiFillAppstore />
+              All Products
+            </Link>
+          </li>
+          <li className="side-menu-links">
+            <Link to="/categories">
+              <BiCategoryAlt />
+              Categories
+            </Link>
+          </li>
+          <li className="side-menu-links">
+            <Link to="/feedback">
+              <MdFeedback />
+              Feedback
+            </Link>
+          </li>
+          <li className="side-menu-links">
+            <Link to="/help">
+              <BiHelpCircle />
+              Help
+            </Link>
+          </li>
+          <li className="side-menu-links">
+            <Link to="/login">
+              <BiLogOut />
+              Log Out
+            </Link>
+          </li>
+          <li className="side-menu-links">
+            <Link to="/about-us">
+              <BiInfoCircle />
+              About Us
+            </Link>
+          </li>
+        </ul>
+      </div>
+      {/* Side Bar */}
     </>
   );
 };

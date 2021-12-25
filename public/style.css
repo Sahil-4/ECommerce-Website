@@ -7,20 +7,6 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100vh;
-  width: 100vw;
-  font-size: 16px;
-  scroll-behavior: smooth;
-}
-
-body {
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  background: #1ad5e8;
-}
-
 /* Remove scroll bar for chrome Safari Opera */
 *::-webkit-scrollbar {
   display: none;
@@ -41,6 +27,20 @@ body {
 .W100 {
   width: 100%;
   overflow-y: scroll;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: #1ad5e8;
 }
 
 #root {

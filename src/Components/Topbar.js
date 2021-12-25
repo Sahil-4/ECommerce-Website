@@ -44,43 +44,43 @@ const Topbar = () => {
         />
         <ul className="nav-link-container">
           <li className="side-menu-links">
-            <Link to="/">
+            <Link to="/" className="link">
               <AiOutlineHome />
               Home
             </Link>
           </li>
           <li className="side-menu-links">
-            <Link to="/products">
+            <Link to="/products" className="link">
               <AiFillAppstore />
               All Products
             </Link>
           </li>
           <li className="side-menu-links">
-            <Link to="/categories">
+            <Link to="/categories" className="link">
               <BiCategoryAlt />
               Categories
             </Link>
           </li>
           <li className="side-menu-links">
-            <Link to="/feedback">
+            <Link to="/feedback" className="link">
               <MdFeedback />
               Feedback
             </Link>
           </li>
           <li className="side-menu-links">
-            <Link to="/help">
+            <Link to="/help" className="link">
               <BiHelpCircle />
               Help
             </Link>
           </li>
           <li className="side-menu-links">
-            <Link to="/login">
+            <Link to="/login" className="link">
               <BiLogOut />
               Log Out
             </Link>
           </li>
           <li className="side-menu-links">
-            <Link to="/about-us">
+            <Link to="/about-us" className="link">
               <BiInfoCircle />
               About Us
             </Link>

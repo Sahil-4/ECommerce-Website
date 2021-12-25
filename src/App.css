@@ -46,15 +46,79 @@
 .nav-link-container {
   width: 100%;
   overflow: hidden;
-  background: #000;
 }
 
 .side-menu-links {
   height: 22px;
   width: 100%;
   font-size: 18px;
-  background: rgb(97, 192, 94);
-  color: #222;
+}
+
+.link {
+  display: inline;
+  color: rgb(8, 8, 8);
 }
 
 /*  Styled Side Menu  */
+
+/* Styling Home Page */
+.home {
+  height: 95%;
+  width: 100%;
+  background: rgb(197, 88, 197);
+  position: fixed;
+  top: calc(5% + 1px);
+}
+
+/* Styled Home Page */
+
+/* Styling Latest Product Container */
+.latest-product-container {
+  background: cyan;
+}
+
+.latest-product-image-box {
+  height: 350px;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/storage4otherprojs.appspot.com/o/SADes%2Fcloth1.png?alt=media&token=2752f7a5-da5c-4aea-9104-1a391fb2c46b");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: slideshow 9s step-start infinite;
+}
+
+@keyframes slideshow {
+  0% {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/storage4otherprojs.appspot.com/o/SADes%2Fcloth1.png?alt=media&token=2752f7a5-da5c-4aea-9104-1a391fb2c46b");
+  }
+  35% {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/storage4otherprojs.appspot.com/o/SADes%2Ft-shirt-icon-vector-27934046.jpg?alt=media&token=b7fa6748-1ebd-47d5-a341-fb1d48aa4489");
+  }
+  75% {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/storage4otherprojs.appspot.com/o/SADes%2Fproduct1.jpg?alt=media&token=d08ca068-bb31-4353-ac51-a53a890a0a9f");
+  }
+}
+
+.latest-product-info {
+  font-size: 1rem;
+  background: darkcyan;
+}
+
+.latest-product-title {
+  font-size: 2rem;
+}
+
+.latest-product-price-tag {
+  font-size: 1.5rem;
+}
+
+/* Styled Latest Product Container */
+
+/* 
+latest-product-container
+  latest-product-image-box
+    latest-product-image
+  latest-product-info
+    latest-product-title
+    latest-product-description
+    latest-product-price-tag
+*/

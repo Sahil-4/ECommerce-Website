@@ -8,3 +8,8 @@
         <button className="search-btn H100">Search</button>
         <button className="search-btn H100">Search</button>
       </header>
+<BiMenuAltLeft
+          onClick={toggleSideBar}
+          className="menu-open-button top-bar-object icon"
+        />
+        <BiCart className="menu-cart-button top-bar-object icon" />

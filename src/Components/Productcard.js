@@ -13,6 +13,7 @@ const Productcard = (props) => {
       <div className="trendingproductA1DescriptionBox W100">
         <h3 className="trendingproducttitle">{props.Name}</h3>
         <p className="trendingproductdescription">{props.Description}</p>
+        <h4>{props.Price}</h4>
       </div>
     </div>
   );

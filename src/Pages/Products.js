@@ -1,6 +1,7 @@
 import React from "react";
-import product1 from "../Components/res/product1.jpg";
-import { BiSearch, BiFilter } from "react-icons/bi";
+import Productbox from "../Components/Productbox";
+import { BiSearch, BiFilterAlt } from "react-icons/bi";
+import product1 from "../Components/res/Headphone1.jpg";
 
 const Products = () => {
   return (
@@ -8,36 +9,107 @@ const Products = () => {
       <header className="menu-bar W100">
         <input
           type="text"
-          name="search"
-          placeholder="Search"
-          className="search-box2 H100"
+          name="products"
+          placeholder="Search Products"
+          className="search-box H100"
         />
-        {/* Filter button */}
+        {/* Search product button */}
+        <BiSearch className="menu-cart-button top-bar-object" />
 
-        {/* search product button */}
-        <button className="search-btn H100">Search</button>
+        {/* Filter product button */}
+        <BiFilterAlt className="menu-open-button top-bar-object" />
       </header>
-      <div id="products" className="products-page W100 H100">
+      <div id="all-products" className="search-products-page W100">
         {/* Search results will appear here */}
-
-        <div className="product-card W100">
-          <div className="product-card-image-box H100">
-            <img
-              className="product-card-image H100 W100"
-              src={product1}
-              alt="product1"
-            />
-          </div>
-          <div className="product-card-info-box H100">
-            <h3 className="product-card-name">Name</h3>
-            <p className="product-card-description">
-              Description Description Description Description
-              DescriptionDescription.
-            </p>
-            <h6 className="product-card-price-tag">INR 655/-</h6>
-          </div>
-        </div>
-        
+        <Productbox
+          key={0}
+          ProductImage={product1}
+          ProductImageName={"NA"}
+          ProductName={"BSS Headphones"}
+          ProductDescription={"Kaan faad headphones mat khareedna koi"}
+          ProductPrice={"2276/-"}
+        />
+        <Productbox
+          key={1}
+          ProductImage={product1}
+          ProductImageName={"NA"}
+          ProductName={"BSS Headphones"}
+          ProductDescription={"Kaan faad headphones mat khareedna koi"}
+          ProductPrice={"2276/-"}
+        />
+        <Productbox
+          key={2}
+          ProductImage={product1}
+          ProductImageName={"NA"}
+          ProductName={"BSS Headphones"}
+          ProductDescription={"Kaan faad headphones mat khareedna koi"}
+          ProductPrice={"2276/-"}
+        />
+        <Productbox
+          key={3}
+          ProductImage={product1}
+          ProductImageName={"NA"}
+          ProductName={"BSS Headphones"}
+          ProductDescription={"Kaan faad headphones mat khareedna koi"}
+          ProductPrice={"2276/-"}
+        />
+        <Productbox
+          key={4}
+          ProductImage={product1}
+          ProductImageName={"NA"}
+          ProductName={"BSS Headphones"}
+          ProductDescription={"Kaan faad headphones mat khareedna koi"}
+          ProductPrice={"2276/-"}
+        />
+        <Productbox
+          key={5}
+          ProductImage={product1}
+          ProductImageName={"NA"}
+          ProductName={"BSS Headphones"}
+          ProductDescription={"Kaan faad headphones mat khareedna koi"}
+          ProductPrice={"2276/-"}
+        />
+        <Productbox
+          key={6}
+          ProductImage={product1}
+          ProductImageName={"NA"}
+          ProductName={"BSS Headphones"}
+          ProductDescription={"Kaan faad headphones mat khareedna koi"}
+          ProductPrice={"2276/-"}
+        />
+        <Productbox
+          key={7}
+          ProductImage={product1}
+          ProductImageName={"NA"}
+          ProductName={"BSS Headphones"}
+          ProductDescription={"Kaan faad headphones mat khareedna koi"}
+          ProductPrice={"2276/-"}
+        />
+        <Productbox
+          key={8}
+          ProductImage={product1}
+          ProductImageName={"NA"}
+          ProductName={"BSS Headphones"}
+          ProductDescription={"Kaan faad headphones mat khareedna koi"}
+          ProductPrice={"2276/-"}
+        />
+        <Productbox
+          key={9}
+          ProductImage={product1}
+          ProductImageName={"NA"}
+          ProductName={"BSS Headphones"}
+          ProductDescription={"Kaan faad headphones mat khareedna koi"}
+          ProductPrice={"2276/-"}
+        />
+        <Productbox
+          key={10}
+          ProductImage={product1}
+          ProductImageName={"NA"}
+          ProductName={"BSS Headphones"}
+          ProductDescription={"Kaan faad headphones mat khareedna koi"}
+          ProductPrice={"2276/-"}
+        />
+        {/* Search results will appear here */}
       </div>
     </>
   );

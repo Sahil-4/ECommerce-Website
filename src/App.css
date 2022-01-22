@@ -14,7 +14,6 @@
 }
 
 .search-box {
-  height: 100%;
   width: 80%;
 }
 
@@ -44,13 +43,11 @@
 }
 
 .nav-link-container {
-  width: 100%;
   overflow: hidden;
 }
 
 .side-menu-links {
   height: 22px;
-  width: 100%;
   font-size: 18px;
 }
 
@@ -64,7 +61,6 @@
 /* Styling Home Page */
 .home {
   height: 95%;
-  width: 100%;
   background: rgb(197, 88, 197);
   position: fixed;
   top: calc(5% + 1px);
@@ -79,22 +75,22 @@
 
 .latest-product-image-box {
   height: 350px;
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/storage4otherprojs.appspot.com/o/SADes%2Fcloth1.png?alt=media&token=2752f7a5-da5c-4aea-9104-1a391fb2c46b");
+  background-color: #fff;
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center;
-  animation: slideshow 9s step-start infinite;
+  animation: slideshow 7s step-end infinite;
 }
 
 @keyframes slideshow {
   0% {
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/storage4otherprojs.appspot.com/o/SADes%2Fcloth1.png?alt=media&token=2752f7a5-da5c-4aea-9104-1a391fb2c46b");
+    background-image: url("Components/res/Top1.jpg");
   }
   35% {
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/storage4otherprojs.appspot.com/o/SADes%2Ft-shirt-icon-vector-27934046.jpg?alt=media&token=b7fa6748-1ebd-47d5-a341-fb1d48aa4489");
+    background-image: url("Components/res/Top2.jpg");
   }
   75% {
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/storage4otherprojs.appspot.com/o/SADes%2Fproduct1.jpg?alt=media&token=d08ca068-bb31-4353-ac51-a53a890a0a9f");
+    background-image: url("Components/res/Top3.jpg");
   }
 }
 
@@ -113,12 +109,53 @@
 
 /* Styled Latest Product Container */
 
-/* 
-latest-product-container
-  latest-product-image-box
-    latest-product-image
-  latest-product-info
-    latest-product-title
-    latest-product-description
-    latest-product-price-tag
-*/
+/* Styling trending product box */
+.trendingproductsbox {
+  height: 250px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin: 3px 0;
+}
+
+.trendingproductcard {
+  width: 170px;
+  margin: 0 1px;
+  flex: 0 0 auto;
+  background: #fff;
+}
+
+/* Styled trending product box */
+
+/* Products Page */
+.search-box2 {
+  width: 70%;
+}
+
+.search-btn {
+  width: 20%;
+}
+
+.products-page {
+  height: 95%;
+  position: fixed;
+  top: calc(5% + 1px);
+}
+
+.product-card {
+  height: 100px;
+  display: block;
+  background: chartreuse;
+}
+
+.product-card-image-box {
+  width: 30%;
+  display: inline-block;
+}
+
+.product-card-info-box {
+  width: 70%;
+  display: inline-block;
+}
+
+/* Products Page */

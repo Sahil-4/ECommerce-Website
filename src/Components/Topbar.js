@@ -42,44 +42,44 @@ const Topbar = () => {
           onClick={toggleSideBar}
           className="menu-close-button icon"
         />
-        <ul className="nav-link-container">
-          <li className="side-menu-links">
+        <ul className="nav-link-container W100">
+          <li className="side-menu-links W100">
             <Link to="/" className="link">
               <AiOutlineHome />
               Home
             </Link>
           </li>
-          <li className="side-menu-links">
+          <li className="side-menu-links W100">
             <Link to="/products" className="link">
               <AiFillAppstore />
               All Products
             </Link>
           </li>
-          <li className="side-menu-links">
+          <li className="side-menu-links W100">
             <Link to="/categories" className="link">
               <BiCategoryAlt />
               Categories
             </Link>
           </li>
-          <li className="side-menu-links">
+          <li className="side-menu-links W100">
             <Link to="/feedback" className="link">
               <MdFeedback />
               Feedback
             </Link>
           </li>
-          <li className="side-menu-links">
+          <li className="side-menu-links W100">
             <Link to="/help" className="link">
               <BiHelpCircle />
               Help
             </Link>
           </li>
-          <li className="side-menu-links">
+          <li className="side-menu-links W100">
             <Link to="/login" className="link">
               <BiLogOut />
               Log Out
             </Link>
           </li>
-          <li className="side-menu-links">
+          <li className="side-menu-links W100">
             <Link to="/about-us" className="link">
               <BiInfoCircle />
               About Us

@@ -1,6 +1,7 @@
 import React from "react";
 import Productcard from "./Productcard";
-import Show1 from "./res/Show1.jpg";
+// import Show1 from "../Components/res/Show1.jpg";
+const Show1 = "https://firebasestorage.googleapis.com/v0/b/storage4otherprojs.appspot.com/o/SADes%2FShow2.jpg?alt=media&token=36cd6e2c-ece9-4443-85fd-57c357992228";
 
 const Trendingproductsbox = () => {
   return (

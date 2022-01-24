@@ -1,7 +1,8 @@
 import React from "react";
 import Productbox from "../Components/Productbox";
 import { BiSearch, BiFilterAlt } from "react-icons/bi";
-import product1 from "../Components/res/Headphone1.jpg";
+// import product1 from "../Components/res/Headphone1.jpg";
+const product1 = "https://firebasestorage.googleapis.com/v0/b/storage4otherprojs.appspot.com/o/SADes%2FHeadphone1.jpg?alt=media&token=4fd262c6-8fb5-4548-8ace-8ed0dd2a2e31";
 
 const Products = () => {
   return (

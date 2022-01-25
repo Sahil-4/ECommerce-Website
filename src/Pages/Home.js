@@ -1,17 +1,17 @@
 import React from "react";
 import Topbar from "../Components/Topbar";
-import LatestProduct from "../Components/LatestProduct";
-import Trendingproductsbox from "../Components/Trendingproductsbox";
+import FeaturedProduct from "../Components/FeaturedProduct";
+import Trendingproducts from "../Components/Trendingproducts";
 
 const Home = () => {
   return (
     <>
       <Topbar></Topbar>
-      <div className="home W100">
-        <LatestProduct />
-        <Trendingproductsbox />
-        <Trendingproductsbox />
-        <Trendingproductsbox />
+      <div className="main W100">
+        <FeaturedProduct />
+        <Trendingproducts />
+        <Trendingproducts />
+        <Trendingproducts />
       </div>
     </>
   );

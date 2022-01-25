@@ -1,31 +1,34 @@
 /*  Styling Top Menu Bar  */
-.menu-bar {
+.top-menu-bar {
   height: 5%;
   overflow: hidden;
   position: fixed;
   top: 0;
 }
 
-.top-bar-object {
+.top-menu-bar-object {
   height: 99%;
   width: 10%;
+  background: #fff;
+  color: #000;
   display: inline;
+  cursor: pointer;
   outline: 1px solid black;
 }
 
-.search-box {
+.top-menu-bar-search-box {
   width: 80%;
 }
 
-.menu-cart-button,
-.menu-open-button {
+.top-menu-bar-open-cart-button,
+.top-menu-bar-side-menu-open-button {
   float: right;
 }
 
 /*  Styled Top Menu Bar  */
 
 /*  Styling Side Menu  */
-.side-bar {
+.side-menu-bar {
   height: 100vh;
   width: 0%;
   background: #bc8f8f;
@@ -37,16 +40,16 @@
   right: 0;
 }
 
-.menu-close-button {
+.side-menu-bar-close-button {
   float: right;
   display: block;
 }
 
-.nav-link-container {
+.side-menu-nav-link-container {
   overflow: hidden;
 }
 
-.side-menu-links {
+.side-menu-nav-link {
   height: 22px;
   font-size: 18px;
 }
@@ -59,21 +62,21 @@
 /*  Styled Side Menu  */
 
 /* Styling Home Page */
-.home {
+.main {
   height: 95%;
-  background: rgb(197, 88, 197);
+  background: rgb(211, 187, 211);
   position: fixed;
   top: calc(5% + 1px);
 }
 
 /* Styled Home Page */
 
-/* Styling Latest Product Container */
-.latest-product-container {
-  background: cyan;
+/* Styling Featured Product Container */
+.featured-product-container {
+  background: rgb(174, 212, 212);
 }
 
-.latest-product-image-box {
+.featured-product-image-box {
   height: 350px;
   background-color: #fff;
   background-size: auto 100%;
@@ -106,23 +109,36 @@
   }
 }
 
-.latest-product-info {
+.featured-product-info {
   font-size: 1rem;
   background: darkcyan;
 }
 
-.latest-product-title {
+.featured-product-title {
   font-size: 2rem;
 }
 
-.latest-product-price-tag {
+.featured-product-rate {
   font-size: 1.5rem;
 }
 
-/* Styled Latest Product Container */
+.star-icon-checked {
+  color: #ffd700;
+}
 
-/* Styling trending product box */
-.trendingproductsbox {
+.star-icon-unchecked {
+  color: #fff;
+}
+
+.rating-box {
+  margin-right: 5%;
+  float: right;
+}
+
+/* Styled Featured Product Container */
+
+/* Styling Trending product box */
+.trending-products-box {
   height: 250px;
   display: flex;
   flex-wrap: nowrap;
@@ -130,7 +146,7 @@
   margin: 3px 0;
 }
 
-.trendingproductcard {
+.trending-product-card {
   width: 170px;
   margin: 0 1px;
   flex: 0 0 auto;
@@ -138,7 +154,7 @@
   background: #fff;
 }
 
-/* Styled trending product box */
+/* Styled Trending product box */
 
 /* Products Page */
 
@@ -147,7 +163,7 @@
   font-size: 18px;
 }
 
-.search-products-page {
+.all-products-page {
   height: 95%;
   position: fixed;
   top: calc(5% + 3px);

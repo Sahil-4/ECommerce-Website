@@ -15,71 +15,72 @@ import { MdFeedback } from "react-icons/md";
 const Topbar = () => {
   const toggleSideBar = () => {
     let sideBar = document.getElementById("side-bar");
-    sideBar.style.width = sideBar.style.width !== "0%" ? "0%" : "30%";
+    sideBar.style.width = sideBar.style.width === "45%" ? "0%" : "45%";
   };
 
   return (
     <>
       {/* Top Menu Bar */}
-      <header className="menu-bar W100">
+      <header className="top-menu-bar W100">
         <input
           type="text"
           name="search"
+          disabled="True"
           placeholder="Search"
-          className="search-box top-bar-object H100"
+          className="top-menu-bar-search-box top-menu-bar-object H100"
         />
         <BiMenuAltLeft
           onClick={toggleSideBar}
-          className="menu-open-button top-bar-object icon"
+          className="top-menu-bar-side-menu-open-button top-menu-bar-object icon"
         />
-        <BiCart className="menu-cart-button top-bar-object icon" />
+        <BiCart className="top-menu-bar-open-cart-button top-menu-bar-object icon" />
       </header>
       {/* Top Menu Bar */}
 
       {/* Side Bar */}
-      <div className="side-bar" id="side-bar">
+      <div className="side-menu-bar" id="side-bar">
         <IoIosClose
           onClick={toggleSideBar}
-          className="menu-close-button icon"
+          className="side-menu-bar-close-button icon"
         />
-        <ul className="nav-link-container W100">
-          <li className="side-menu-links W100">
+        <ul className="side-menu-nav-link-container W100">
+          <li className="side-menu-nav-link W100">
             <Link to="/" className="link">
               <AiOutlineHome />
               Home
             </Link>
           </li>
-          <li className="side-menu-links W100">
+          <li className="side-menu-nav-link W100">
             <Link to="/products" className="link">
               <AiFillAppstore />
               All Products
             </Link>
           </li>
-          <li className="side-menu-links W100">
+          <li className="side-menu-nav-link W100">
             <Link to="/categories" className="link">
               <BiCategoryAlt />
               Categories
             </Link>
           </li>
-          <li className="side-menu-links W100">
+          <li className="side-menu-nav-link W100">
             <Link to="/feedback" className="link">
               <MdFeedback />
               Feedback
             </Link>
           </li>
-          <li className="side-menu-links W100">
+          <li className="side-menu-nav-link W100">
             <Link to="/help" className="link">
               <BiHelpCircle />
               Help
             </Link>
           </li>
-          <li className="side-menu-links W100">
+          <li className="side-menu-nav-link W100">
             <Link to="/login" className="link">
               <BiLogOut />
               Log Out
             </Link>
           </li>
-          <li className="side-menu-links W100">
+          <li className="side-menu-nav-link W100">
             <Link to="/about-us" className="link">
               <BiInfoCircle />
               About Us

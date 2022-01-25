@@ -9,6 +9,7 @@ import Home from './Pages/Home';
 import Products from "./Pages/Products";
 import Contact from "./Pages/Contact";
 import About from "./Pages/About";
+import Feedback from "./Pages/Feedback";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route exact path='/contact'>
             <Contact />
+          </Route>
+          <Route exact path='/feedback'>
+            <Feedback />
           </Route>
         </Switch>
       </Router>
